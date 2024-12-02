@@ -1,0 +1,58 @@
+package com.kukdudelivery.Model
+
+import android.os.Parcelable
+import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class Order(
+    val GST: String,
+    val coupon_code: String,
+    val customer_address: String,
+    val customer_mobile: String,
+    val customer_name: String,
+    val delivery_charges: String,
+    val delivery_date: String,
+    val delivery_order_payment_time: String,
+    val delivery_paid_amount: String,
+    val delivery_payment_gateway_request: String,
+    val delivery_payment_gateway_response: String,
+    val delivery_payment_status: String,
+    val delivery_payment_type: String,
+    val delivery_payment_via: String,
+    val delivery_time: String,
+    val delivery_transaction_id: String,
+    val discount_amount: String,
+    val item_total: String,
+    val map_link: String,
+    val order_approval_time: String,
+    val order_cancellation_time: String,
+    val order_comment: String,
+    val order_date: String,
+    val order_delivered_time: String,
+    val order_id: String,
+    val order_no: String,
+    val order_processing_time: String,
+    val order_status: String,
+    val order_total: String,
+    val packing_charges: String,
+    val paid_amount: String,
+    val paid_by: String,
+    val payment_status: String,
+    val payment_type: String,
+    val payment_via: String,
+    val products: List<Product>,
+    val shipping_address: String,
+    val shipping_area: String,
+    val shipping_city: String,
+    val shipping_country: String,
+    val shipping_mobile: String,
+    val shipping_state: String,
+    val shipping_zipcode: String,
+    val transaction_id: String,
+    val user_id: String,
+    val vendor_address: String,
+    val vendor_mobile: String,
+    val vendor_name: String,
+    val wallet_money: String
+) : Parcelable
